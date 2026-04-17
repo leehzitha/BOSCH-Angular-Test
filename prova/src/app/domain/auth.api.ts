@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Api } from './api';
-import { ILogin } from './interfaces/ilogin';
 import { Observable } from 'rxjs';
 import { IRegister } from './interfaces/IRegister';
+import { ILogin } from './interfaces/ILogin';
 
 @Injectable({
   providedIn: 'root',

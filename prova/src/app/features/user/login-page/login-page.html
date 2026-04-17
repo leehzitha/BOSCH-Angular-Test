@@ -10,7 +10,7 @@
             <br>
             <app-input [placeholder]="'Your Password'" (onChange)="getPass($event)"></app-input>
             <br><br><br>
-            <app-button [title]="'Login in'"></app-button>
+            <app-button [title]="'Login in'" (onClick)="login()"></app-button>
         </form>
     </div>
 </div>

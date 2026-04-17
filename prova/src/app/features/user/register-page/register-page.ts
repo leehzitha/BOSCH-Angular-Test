@@ -59,7 +59,7 @@ export class RegisterPage {
       name :this.Name?.value,
       email : this.Email?.value,
       password : this.Password?.value,
-      dataNasc : this.DataNasc?.value,
+      birthday : this.DataNasc?.value,
       phone : this.Phone?.value,
     }
 

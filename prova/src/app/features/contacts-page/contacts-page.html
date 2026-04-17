@@ -1,6 +1,13 @@
 <app-header></app-header>
 <div class="container">
-    <div class="contacts">
-        
-    </div>
+        <p class="title">Contacts</p>
+        <div class="contacts">
+            @for (contact of contacts; track $index; let i = $index) {
+               <app-contact-card 
+                [user]="contact"
+                (onClick)="handleUser($event)"
+                ></app-contact-card> 
+            }
+        </div> 
+
 </div>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Header } from '../../shared/header/header';
+import { IContact } from '../../domain/interfaces/IContacts';
 
 @Component({
   selector: 'app-contacts-page',
@@ -7,4 +8,11 @@ import { Header } from '../../shared/header/header';
   templateUrl: './contacts-page.html',
   styleUrl: './contacts-page.css',
 })
-export class ContactsPage {}
+export class ContactsPage {
+  protected contacts = signal<IContact[]>([]);
+
+  handleUser(id : number) {
+    
+  }
+
+}
