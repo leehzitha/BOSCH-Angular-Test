@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="forms">
+        <p class="title">Sign In</p>
+        <form action="">
+            <label for="">Email</label>
+            <br>
+            <app-input [placeholder]="'Your email'" (onChange)="getEmail($event)"></app-input>
+            <br><br>
+            <label for="">Password</label>
+            <br>
+            <app-input [placeholder]="'Your Password'" (onChange)="getPass($event)"></app-input>
+            <br><br><br>
+            <app-button [title]="'Login in'"></app-button>
+        </form>
+    </div>
+</div>

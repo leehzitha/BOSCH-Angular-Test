@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="forms">
+        <p class="title">Sign Up</p>
+        <form action="post" [formGroup]="SubscribeForm" (ngSubmit)="subscribe()"></form>>
+            <label for="">Name</label>
+            <br>
+            <app-input [placeholder]="'Your name'" (onChange)="getName($event)" formControlName="name"></app-input>
+            <br><br>
+            <label for="">Email</label>
+            <br>
+            <app-input [placeholder]="'Your best email'" (onChange)="getEmail($event)"></app-input>
+            <br><br>
+            <label for="">Nascimento</label>
+            <br>
+            <app-input [placeholder]="'Sua data de nascimento'" (onChange)="getNasc($event)"></app-input>
+            <br><br>
+            <label for="">Phone Number</label>
+            <br>
+            <app-input [placeholder]="'Your phone number'" (onChange)="getPhone($event)"></app-input>
+            <br><br>
+            <label for="">Password</label>
+            <br>
+            <app-input [placeholder]="'At least 8 characters'" (onChange)="getPlace($event)"></app-input>
+            <br><br><br>
+            <app-button [title]="'Create Account'"></app-button>
+        </form>
+    </div>
+</div>
